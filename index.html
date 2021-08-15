@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic bank website using JavaScript</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!-- Tailwind css  -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <section
+        class="hero-section py-40 bg-gradient-to-r from-green-400 to-blue-300"
+      >
+        <h1 class="text-5xl text-center text-white">
+          Welcome To <span class="font-bold text-yellow-300">SM Bank</span>
+        </h1>
+      </section>
+    </header>
+    <main>
+      <section class="bg-indigo-500 p-8 mt-12 w-3/4 mx-auto rounded-2xl">
+        <h2 class="text-center text-3xl text-white">Please Login</h2>
+        <div class="flex justify-center items-center flex-col">
+          <input
+            class="block w-2/4 border py-2 px-4 rounded-2xl mt-4 outline-none"
+            type="email"
+            id="email-filed"
+            placeholder="Your Email Address"
+          />
+          <input
+            class="block w-2/4 border py-2 px-4 rounded-2xl mt-4 outline-none"
+            type="password"
+            id="password-filed"
+            placeholder="Password"
+          />
+          <button
+            id="login-submit"
+            class="bg-green-900 text-white py-2 px-12 mt-4 rounded font-medium"
+          >
+            Login
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="js/login.js"></script>
+  </body>
+</html>

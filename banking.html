@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking Page</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!-- Tailwind css -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <section
+        class="hero-section py-40 bg-gradient-to-r from-green-400 to-blue-300"
+      >
+        <h1 class="text-5xl text-center text-white">
+          Let's get some
+          <span class="font-bold text-yellow-300">Moooooney!!!</span>
+        </h1>
+      </section>
+    </header>
+    <main class="w-11/12 mx-auto">
+      <!-- Balence and transaction -->
+      <section class="py-12 px-8 mt-16 bg-gray-100 rounded">
+        <div class="grid grid-cols-3 gap-4">
+          <div class="bg-blue-500 p-8 rounded-2xl shadow-2xl text-white">
+            <h3 class="text-2xl mb-4">Deposit</h3>
+            <h4 class="text-5xl font-medium text-purple-200">
+              $<span id="diposit-total">00</span>
+            </h4>
+          </div>
+
+          <div class="bg-indigo-400 p-8 rounded-2xl shadow-2xl text-white">
+            <h3 class="text-2xl mb-4">Withdraw</h3>
+            <h4 class="text-5xl font-medium text-purple-200">
+              $<span id="withdraw-total">00</span>
+            </h4>
+          </div>
+
+          <div class="bg-green-500 p-8 rounded-2xl shadow-2xl text-white">
+            <h3 class="text-2xl mb-4">Balaence</h3>
+            <h4 class="text-5xl font-medium text-purple-200">
+              $<span id="account-balance">1240</span>
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- deposit and withdraw  -->
+
+      <section class="py-12 px-8 mt-16 bg-gray-100 rounded">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-pink-200 p-8 rounded-2xl">
+            <h3 class="text-3xl text-green-800 font-medium uppercase">
+              Please Deposit
+            </h3>
+            <div class="">
+              <input
+                class="
+                  block
+                  w-2/4
+                  border
+                  py-2
+                  px-4
+                  rounded-2xl
+                  mt-4
+                  outline-none
+                "
+                type="text"
+                id="deposit-input"
+                placeholder="$ Amount you want to Deposit"
+              />
+              <button
+                id="deposit-button"
+                class="
+                  bg-green-900
+                  text-white
+                  py-2
+                  px-12
+                  mt-4
+                  rounded
+                  font-medium
+                  uppercase
+                "
+              >
+                Deposit
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-purple-200 p-8 rounded-2xl">
+            <h3 class="text-3xl text-green-800 font-medium uppercase">
+              Please Withdraw
+            </h3>
+            <div class="">
+              <input
+                class="
+                  block
+                  w-2/4
+                  border
+                  py-2
+                  px-4
+                  rounded-2xl
+                  mt-4
+                  outline-none
+                "
+                type="text"
+                id="withdraw-input"
+                placeholder="$ Amount you want to Withdraw"
+              />
+              <button
+                id="withdraw-button"
+                class="
+                  bg-green-900
+                  text-white
+                  py-2
+                  px-12
+                  mt-4
+                  rounded
+                  font-medium
+                  uppercase
+                "
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
